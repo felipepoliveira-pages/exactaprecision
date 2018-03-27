@@ -2,30 +2,53 @@
 <html>
     <head>
         <meta name="viewport" value="width=device-width; initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="ep-style.css">
+        <link rel="stylesheet" href="landpage.css">
     </head>
     <body>
-        <header>
-            <ul>
-                <li><a href="#sectionServicos">SERVIÇOS</a></li>
-                <li><a href="#sectionClientes">CLIENTES</a></li>
-                <li><a href="#sectionParceiros">PARCEIROS</a></li>
-                <li><a href="#sectionSobre">SOBRE</a></li>
-                <li><a href="#sectionContato">CONTATO</a></li>
-            </ul>
-            <ul>
-                <li>
-                    <span class="iconfied-text">
-                        <img class="iconfied-text-icon" src="." alt="Telefone">(11) 2312-2566
-                    </span>
-                </li>
-                <li>
-                    <span class="iconfied-text">
-                        <img class="iconfied-text-icon" src="." alt="Celular">(11) 9-9930-2586
-                    </span>
-                </li>
-            </ul>
+        <header id="topMenu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SERVIÇOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CLIENTES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PARCEIROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SOBRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTATO</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <span class="iconfied-text">
+                                <img class="iconfied-text-icon" src="." alt="Telefone">(11) 2312-2566
+                            </span>
+                        </li>
+                        <li class="nav-item">
+                            <span class="iconfied-text">
+                                <img class="iconfied-text-icon" src="." alt="Telefone">(11) 9-9930-2586
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>
-        <main>
+        <main class="container">
             <!--BANNER-->
             <div id="banner">
                 <img src="." alt="Exacta Precision logo">
