@@ -4,13 +4,15 @@
         <meta name="viewport" value="width=device-width; initial-scale=1.0">
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="ep-style.css">
-        <link rel="stylesheet" href="landpage.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="css/ep-style.css">
+        <link rel="stylesheet" href="css/landpage.css">
     </head>
     <body>
-        <header id="topMenu">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <header id="topMenu" class="position-fixed">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -36,79 +38,94 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <span class="iconfied-text">
-                                <img class="iconfied-text-icon" src="." alt="Telefone">(11) 2312-2566
+                                <img class="iconfied-text-icon" src="images/telephone.svg" style="width: 24px;" alt="Telefone">(11) 2312-2566
                             </span>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" class="mr-l">
                             <span class="iconfied-text">
-                                <img class="iconfied-text-icon" src="." alt="Telefone">(11) 9-9930-2586
+                                <img class="iconfied-text-icon" src="images/smartphone.svg" style="width: 14px;" alt="Celular">(11) 9-9930-2586
                             </span>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <main class="container">
+        <main>
             <!--BANNER-->
             <div id="banner">
-                <img src="." alt="Exacta Precision logo">
+                <img src="images/ep-logo-white.svg" alt="Exacta Precision logo" style="width: 100%; max-width: 365px;">
             </div>
             <!--SERVIÇOS-->
-            <section id="sectionServicos">
-                <h2>Nossos serviços</h2>
-                <div class="card-grid">
-                    <div class="card">
-                        <div class="card-content">
-                            <img src="." alt="Máquina CMM" class="card-content-thumbail">
-                            <span class="card-content-desc">Manutenção e Reforma de CMMs</span>
+            <section id="sectionServicos" class="center-container-flex section">
+                <div class="container">
+                    <h2 class="text-dark">Nossos serviços</h2>
+                    <div class="card-grid">
+                        <div class="card">
+                            <div class="card-container">
+                                <div class="card-content">
+                                    <img src="images/cmm.svg" style="max-width: 96px;" alt="Máquina CMM" class="card-content-thumbail">
+                                    <span class="card-content-desc">Manutenção e Reforma de CMMs</span>
+                                </div>
+                            
+                                <div class="card-footer">
+                                    <button type="button" class="btn btn-blue" data-modal-open="servicoManutencaoEReformaCMM">Confira</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <button type="button" class="btn btn-blue" data-modal-open="servicoManutencaoEReformaCMM">Confira</button>
+                        <div class="card">
+                            <div class="card-container">
+                                <div class="card-content">
+                                    <img src="images/training.svg" style="max-width: 85px" alt="Treinamento" class="card-content-thumbail">
+                                    <span class="card-content-desc">Treinamentos</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button type="button" class="btn btn-blue" data-modal-open="servicoTreinamentos">Confira</button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <img src="." alt="Treinamento" class="card-content-thumbail">
-                            <span class="card-content-desc">Treinamentos</span>
+                        <div class="card">
+                            <div class="card-container">
+                                <div class="card-content">
+                                    <img src="images/medal.svg" style="max-width: 95px" alt="Calibração" class="card-content-thumbail">
+                                    <span class="card-content-desc">Calibração RBC e Rastreável</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button type="button" class="btn btn-blue" data-modal-open="servicoCalibracaoRbcERastreavel">Confira</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <button type="button" class="btn btn-blue" data-modal-open="servicoTreinamentos">Confira</button>
+                        <div class="card">
+                            <div class="card-container">
+                                <div class="card-content">
+                                    <img src="images/squared-piece.svg" style="max-width: 134px" alt="Granito" class="card-content-thumbail">
+                                    <span class="card-content-desc">Recuperação de Granito e Ferro Fundido</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button type="button" class="btn btn-blue" data-modal-open="servicoRecGranitoEFerro">Confira</button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <img src="." alt="Calibração" class="card-content-thumbail">
-                            <span class="card-content-desc">Calibração RBC e Rastreável</span>
+                        <div class="card">
+                            <div class="card-container">
+                                <div class="card-content">
+                                    <img src="images/cart.svg" style="max-width: 118px" alt="Carrinho de compras" class="card-content-thumbail">
+                                    <span class="card-content-desc">Venda de equipamentos e produtos</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button type="button" class="btn btn-blue" data-modal-open="servicoVendas">Confira</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <button type="button" class="btn btn-blue" data-modal-open="servicoCalibracaoRbcERastreavel">Confira</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <img src="." alt="Granito" class="card-content-thumbail">
-                            <span class="card-content-desc">Recuperação de Granito e Ferro Fundido</span>
-                        </div>
-                        <div class="card-footer">
-                            <button type="button" class="btn btn-blue" data-modal-open="servicoRecGranitoEFerro">Confira</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <img src="." alt="Carrinho de compras" class="card-content-thumbail">
-                            <span class="card-content-desc">Venda de equipamentos e produtos</span>
-                        </div>
-                        <div class="card-footer">
-                            <button type="button" class="btn btn-blue" data-modal-open="servicoVendas">Confira</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <img src="." alt="Certificado" class="card-content-thumbail">
-                            <span class="card-content-desc">Projetos</span>
-                        </div>
-                        <div class="card-footer">
-                            <button type="button" class="btn btn-blue" data-modal-open="servicoProjetos">Confira</button>
+                        <div class="card">
+                            <div class="card-container">
+                                <div class="card-content">
+                                    <img src="images/certificate.svg" style="max-width: 84px" alt="Certificado" class="card-content-thumbail">
+                                    <span class="card-content-desc">Projetos</span>
+                                </div>
+                                <div class="card-footer">
+                                    <button type="button" class="btn btn-blue" data-modal-open="servicoProjetos">Confira</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

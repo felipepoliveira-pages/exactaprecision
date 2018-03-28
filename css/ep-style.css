@@ -3,8 +3,81 @@
     font-family: 'Roboto', 'Segoe UI', 'Arial';
 }
 
-#topMenu{
-    background-color: blue;
+.btn-blue{
+    background-color: #5078D5;
     color: white;
 }
 
+.card-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-grid .card{
+    align-items: center;
+    box-shadow: 0px 0px 0px transparent;
+    display: flex;
+    flex: 1;
+    flex-basis: 333px;
+    flex-grow: 0;
+    justify-content: center;
+    max-height: 400px;
+    min-height: 400px;
+    transform: scale(1);
+
+    transition: transform .2s, box-shadow .4s;
+}
+
+.card-grid .card:hover{
+    box-shadow: 0px 0px 8px blue;
+    transform: scale(1.0061);
+    z-index: 999;
+}
+
+.card-grid .card *{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.card-grid .card-footer{
+    background-color: transparent;
+    width: 100%;
+}
+
+.center-container-flex{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    font-size: 48px;
+}
+
+h2, h3{
+    text-align: center;
+}
+
+.iconfied-text .iconfied-text-icon{
+    margin-right: 8px;
+}
+
+.nav-item .iconfied-text{
+    margin-right: 32px;
+}
+
+.section{
+    padding-top: 32px;
+}
+
+.text-dark{
+    color: #3A308C !important;
+}
+
+@media screen and (max-width: 840px){
+    .card-grid .card{
+        flex-grow: 1;
+    }
+}
