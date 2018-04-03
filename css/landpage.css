@@ -8,6 +8,14 @@
     min-height: 100vh;
 }
 
+body{
+    background-color: rgb(230, 230, 230);
+}
+
+.expandable-slider{
+    margin-top: 64px;
+}
+
 .navbar-dark .navbar-nav .nav-item *{
     color: rgba(255, 255, 255, 0.8);
 
@@ -18,12 +26,21 @@
     color: #A6CBEB;
 }
 
+#sectionClientes{
+    background-color: white;
+    padding: 64px 24px;
+}
+
 #sectionServicos{
     background-color: #F6F6F6;
     background-image: url("../images/ep-bg-gray.svg");
     background-position: center;
     background-repeat: no-repeat;
     padding: 64px;
+}
+
+.slider{
+    margin-top: 64px;
 }
 
 #topMenu{
