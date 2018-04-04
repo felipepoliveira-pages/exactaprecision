@@ -286,8 +286,11 @@
         </div>
         <script>
          $(".modal.modal-auto").modal();
+         let startTime = new Date().getMilliseconds();
          window.addEventListener('load', () => {
-             $("#splashIntro").modal('hide');
+             setTimeout(() => {
+                $("#splashIntro").modal('hide');
+             }, 3000 -  new Date().getMilliseconds() - startTime);
          });
         </script>
     </body>
