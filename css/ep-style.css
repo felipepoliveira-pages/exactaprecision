@@ -72,6 +72,8 @@
     flex: 1;
 }
 
+.flex-wrap{flex-wrap: wrap}
+
 .flex-container > * + *{ margin-left: 32px; }
 
 .flex-1{flex: 1;}
@@ -97,6 +99,15 @@ h2, h3{
     margin-right: 8px;
 }
 
+.iconfied-text-icon{
+    height: 19px;
+}
+
+.ma-auto{margin: auto;}
+
+.ma-b-xsm{margin-bottom: 16px}
+.ma-b-m{margin-bottom: 64px}
+.ma-t-sm{margin-top: 32px}
 .ma-t-m{margin-top: 64px}
 
 .nav-item .iconfied-text{
