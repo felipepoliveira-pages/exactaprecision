@@ -28,19 +28,19 @@
                             <img src="images/ep-logo-white.svg" alt="Exacta" style="height: 24px; margin-right: 32px;">
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SERVIÇOS</a>
+                            <a class="nav-link" href="#sectionServicos">SERVIÇOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CLIENTES</a>
+                            <a class="nav-link" href="#sectionClientes">CLIENTES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">PARCEIROS</a>
+                            <a class="nav-link" href="#sectionFornecedores">PARCEIROS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SOBRE</a>
+                            <a class="nav-link" href="#sectionSobre">SOBRE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTATO</a>
+                            <a class="nav-link" href="#sectionContato">CONTATO</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
@@ -76,7 +76,7 @@
                                 </div>
                             
                                 <div class="card-footer">
-                                    <button type="button" class="btn btn-blue" data-modal-open="servicoManutencaoEReformaCMM">Confira</button>
+                                    <button type="button" class="btn btn-blue" data-toggle="modal" data-target="#servicoManutencaoEReformaCMM">Confira</button>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                                     <span class="card-content-desc">Treinamentos</span>
                                 </div>
                                 <div class="card-footer">
-                                    <button type="button" class="btn btn-blue" data-modal-open="servicoTreinamentos">Confira</button>
+                                    <button type="button" class="btn btn-blue" data-toggle="modal" data-target="#servicoTreinamentos">Confira</button>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +98,7 @@
                                     <span class="card-content-desc">Calibração RBC e Rastreável</span>
                                 </div>
                                 <div class="card-footer">
-                                    <button type="button" class="btn btn-blue" data-modal-open="servicoCalibracaoRbcERastreavel">Confira</button>
+                                    <button type="button" class="btn btn-blue" data-toggle="modal" data-target="#servicoCalibracaoRbcERastreavel">Confira</button>
                                 </div>
                             </div>
                         </div>
@@ -276,13 +276,60 @@
                 <div class="modal-content flex-container"  style="align-items: center; background-color: #f5f5f5; justify-content: center; text-align: center">
                     <div style="align-items: center; justify-content: center; text-align: center; flex-direction: column;" class="flex-container">
                         <img alt="Exacta Precision logo" src="images/ep-logo.svg" class="d-block fx-heart-beat" style="flex-basis: 160px; flex-grow: 0;">
-                        <img alt="loading gif" src="images/loading.gif" style="flex-basis: 128px; flex-grow: 0; margin-top: 64px;">
+                        <img alt="Carregando conteúdo..." src="images/loading.gif" style="flex-basis: 128px; flex-grow: 0; margin-top: 64px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-fullscreen modal-servico text-light" id="servicoManutencaoEReformaCMM" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content flex-container">
+                    <div class="modal-banner">
+                        <img src="images/banner-blue.jpg" alt="Banner">
+                    </div>
+                    <div class="container">
+                        <span class="modal-disposer" data-dismiss="modal">X</span>
+                        <img src="images/cmm.svg" alt="Máquina CMM" style="width: 96px">
+                        <h3>Manutenção e Reforma de CMMs</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, iusto deserunt debitis fuga adipisci quidem ducimus excepturi voluptates, sint quae voluptate doloremque porro autem cum. Culpa blanditiis voluptates tempore aut.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-fullscreen modal-servico text-light" id="servicoTreinamentos" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content flex-container">
+                    <div class="modal-banner">
+                        <img src="images/banner-blue.jpg" alt="Banner">
+                    </div>
+                    <div class="container">
+                        <span class="modal-disposer" data-dismiss="modal">X</span>
+                        <img src="images/training.svg" alt="Máquina CMM" style="width: 96px">
+                        <h3>Treinamentos</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, iusto deserunt debitis fuga adipisci quidem ducimus excepturi voluptates, sint quae voluptate doloremque porro autem cum. Culpa blanditiis voluptates tempore aut.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-fullscreen modal-servico text-light" id="servicoCalibracaoRbcERastreavel" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content flex-container">
+                    <div class="modal-banner">
+                        <img src="images/banner-blue.jpg" alt="Banner">
+                    </div>
+                    <div class="container">
+                        <span class="modal-disposer" data-dismiss="modal">X</span>
+                        <img src="images/medal.svg" alt="Máquina CMM" style="width: 96px">
+                        <h3>Calibração RBC e Rastreável</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, iusto deserunt debitis fuga adipisci quidem ducimus excepturi voluptates, sint quae voluptate doloremque porro autem cum. Culpa blanditiis voluptates tempore aut.</p>
                     </div>
                 </div>
             </div>
         </div>
         <script>
-         $(".modal.modal-auto").modal();
+
+        //Modal timeout
+         //$(".modal.modal-auto").modal();
          let startTime = new Date().getMilliseconds();
          window.addEventListener('load', () => {
              setTimeout(() => {
