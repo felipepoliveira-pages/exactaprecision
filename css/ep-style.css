@@ -120,6 +120,7 @@ h2, h3{
     margin: auto;
     margin-bottom: 32px;
     max-width: 250px;
+    width: 100%;
 }
 
 .sub{

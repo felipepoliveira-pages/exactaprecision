@@ -53,4 +53,9 @@ body{
     #banner{
         padding: 0px 32px;
     }
+
+    #sectionServicos{
+        padding: 0px;
+    }
+
 }
