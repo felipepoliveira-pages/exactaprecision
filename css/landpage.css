@@ -37,6 +37,10 @@ body{
     font-family: 'Segoe UI Light';
 }
 
+.modal-servico{
+    animation: fx-pop-in .4s;
+}
+
 .modal-servico .container{
     padding: 64px 32px;
 }

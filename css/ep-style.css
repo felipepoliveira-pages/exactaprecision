@@ -3,6 +3,11 @@
     to{transform: scale(1.25)}
 }
 
+@keyframes fx-pop-in{
+    from{transform: scale(0)}
+    to{transform: scale(1)}
+}
+
 *{
     box-sizing: border-box;
     font-family: 'Roboto', 'Segoe UI', 'Arial';
@@ -95,6 +100,10 @@
     infinite
     none
     running;
+}
+
+.fx-pop-in{
+    animation: fx-pop-in 1.5s
 }
 
 h2{
