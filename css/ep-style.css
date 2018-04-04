@@ -110,6 +110,18 @@ h2, h3{
 .ma-t-sm{margin-top: 32px}
 .ma-t-m{margin-top: 64px}
 
+.modal-fullscreen .modal-dialog{
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.modal-fullscreen .modal-content{
+    border-radius: 0px;
+    height: 100vh;
+    width: 100vw;
+}
+
 .nav-item .iconfied-text{
     margin-right: 32px;
 }

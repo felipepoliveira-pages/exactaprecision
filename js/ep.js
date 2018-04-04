@@ -1,3 +1,5 @@
+loaded = false;
+
 window.addEventListener('load', () => {
     $('.slider').slick({
         autoplay: true,
@@ -6,5 +8,5 @@ window.addEventListener('load', () => {
         speed: 300,
         slidesToShow: 1,
         centerMode: true,
-      });         
+      });       
 });

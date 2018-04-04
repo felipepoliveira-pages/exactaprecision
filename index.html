@@ -13,6 +13,16 @@
         <link rel="stylesheet" href="slick/slick-theme.css">
         <link rel="stylesheet" href="css/ep-style.css">
         <link rel="stylesheet" href="css/landpage.css">
+        <style>
+        @keyframes fx-heart-beat{
+            from{transform: scale(1)}
+            to{transform: scale(1.25)}
+        }
+
+        #splashIntro img{
+            animation: fx-heart-beat 5s alternate;
+        }
+        </style>
     </head>
     <body>
         <header id="topMenu" class="position-fixed">
@@ -267,5 +277,18 @@
             </div>
             <img alt="Exacta Precision logo" src="images/ep-logotype-dark.svg" class="d-block ma-auto ma-t-sm ma-b-xsm" style="height: 48px;">
         </footer>
+        <div class="modal modal-auto modal-fullscreen" id="splashIntro" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content flex-container" style="align-items: center; justify-content: center;">
+                    <img alt="Exacta Precision logo" src="images/ep-logo.svg" style="width: 100%; max-width: 280px;">
+                </div>
+            </div>
+        </div>
+        <script>
+         $(".modal.modal-auto").modal();
+         window.addEventListener('load', () => {
+             $("#splashIntro").modal('hide');
+         });
+        </script>
     </body>
 </html>
