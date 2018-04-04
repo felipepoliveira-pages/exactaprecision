@@ -8,6 +8,26 @@
     color: white;
 }
 
+.card-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-content{
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-top: 64px;
+}
+
+.card-content *{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
 .card-grid{
     display: flex;
     flex-wrap: wrap;
@@ -36,8 +56,6 @@
 }
 
 .card-grid .card *{
-    display: block;
-    margin: auto;
     text-align: center;
 }
 
