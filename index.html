@@ -109,7 +109,7 @@
                                     <span class="card-content-desc">Recuperação de Granito e Ferro Fundido</span>
                                 </div>
                                 <div class="card-footer">
-                                    <button type="button" class="btn btn-blue" data-modal-open="servicoRecGranitoEFerro">Confira</button>
+                                    <button type="button" class="btn btn-blue"  data-toggle="modal" data-target="#servicoRecGranitoEFerro">Confira</button>
                                 </div>
                             </div>
                         </div>
@@ -120,7 +120,7 @@
                                     <span class="card-content-desc">Venda de equipamentos e produtos</span>
                                 </div>
                                 <div class="card-footer">
-                                    <button type="button" class="btn btn-blue" data-modal-open="servicoVendas">Confira</button>
+                                    <button type="button" class="btn btn-blue" data-toggle="modal" data-target="#servicoVendas">Confira</button>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +131,7 @@
                                     <span class="card-content-desc">Projetos</span>
                                 </div>
                                 <div class="card-footer">
-                                    <button type="button" class="btn btn-blue" data-modal-open="servicoProjetos">Confira</button>
+                                    <button type="button" class="btn btn-blue" data-toggle="modal" data-target="#servicoProjetos">Confira</button>
                                 </div>
                             </div>
                         </div>
@@ -326,10 +326,55 @@
                 </div>
             </div>
         </div>
+        <div class="modal modal-fullscreen modal-servico text-light" id="servicoRecGranitoEFerro" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content flex-container">
+                    <div class="modal-banner">
+                        <img src="images/banner-blue.jpg" alt="Banner">
+                    </div>
+                    <div class="container">
+                        <span class="modal-disposer" data-dismiss="modal">X</span>
+                        <img src="images/squared-piece.svg" alt="Máquina CMM" style="width: 96px">
+                        <h3>Recuperação de Granito e Ferro Fundido</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, iusto deserunt debitis fuga adipisci quidem ducimus excepturi voluptates, sint quae voluptate doloremque porro autem cum. Culpa blanditiis voluptates tempore aut.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-fullscreen modal-servico text-light" id="servicoVendas" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content flex-container">
+                        <div class="modal-banner">
+                            <img src="images/banner-blue.jpg" alt="Banner">
+                        </div>
+                        <div class="container">
+                            <span class="modal-disposer" data-dismiss="modal">X</span>
+                            <img src="images/cart.svg" alt="Máquina CMM" style="width: 96px">
+                            <h3>Venda de equipamentos e produtos</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, iusto deserunt debitis fuga adipisci quidem ducimus excepturi voluptates, sint quae voluptate doloremque porro autem cum. Culpa blanditiis voluptates tempore aut.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal modal-fullscreen modal-servico text-light" id="servicoProjetos" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content flex-container">
+                            <div class="modal-banner">
+                                <img src="images/banner-blue.jpg" alt="Banner">
+                            </div>
+                            <div class="container">
+                                <span class="modal-disposer" data-dismiss="modal">X</span>
+                                <img src="images/certificate.svg" alt="Máquina CMM" style="width: 96px">
+                                <h3>Projetos</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, iusto deserunt debitis fuga adipisci quidem ducimus excepturi voluptates, sint quae voluptate doloremque porro autem cum. Culpa blanditiis voluptates tempore aut.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         <script>
 
         //Modal timeout
-         //$(".modal.modal-auto").modal();
+         $(".modal.modal-auto").modal();
          let startTime = new Date().getMilliseconds();
          window.addEventListener('load', () => {
              setTimeout(() => {

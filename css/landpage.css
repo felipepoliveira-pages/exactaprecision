@@ -30,6 +30,8 @@ body{
 }
 
 .modal-disposer{
+    display: block;
+    margin-left: auto;
     font-size: 48px;
     text-align: right;
     font-family: 'Segoe UI Light';
