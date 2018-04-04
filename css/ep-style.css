@@ -1,3 +1,8 @@
+@keyframes fx-heart-beat{
+    from{transform: scale(1)}
+    to{transform: scale(1.25)}
+}
+
 *{
     box-sizing: border-box;
     font-family: 'Roboto', 'Segoe UI', 'Arial';
@@ -82,6 +87,15 @@
 .flex-4{flex: 4;}
 .flex-5{flex: 5;}
 .flex-6{flex: 6;}
+
+.fx-heart-beat{
+    animation: fx-heart-beat 1.5s
+    0s
+    alternate
+    infinite
+    none
+    running;
+}
 
 h2{
     font-size: 48px;
