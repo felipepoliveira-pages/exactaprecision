@@ -64,6 +64,22 @@
     width: 100%;
 }
 
+.flex-container{
+    display: flex;
+}
+
+.flex-container > *{
+    flex: 1;
+}
+
+.flex-container > * + *{ margin-left: 32px; }
+
+.flex-1{flex: 1;}
+.flex-2{flex: 2;}
+.flex-3{flex: 3;}
+.flex-4{flex: 4;}
+.flex-5{flex: 5;}
+.flex-6{flex: 6;}
 
 h2{
     font-size: 48px;
@@ -80,6 +96,8 @@ h2, h3{
 .iconfied-text .iconfied-text-icon{
     margin-right: 8px;
 }
+
+.ma-t-m{margin-top: 64px}
 
 .nav-item .iconfied-text{
     margin-right: 32px;
@@ -123,14 +141,25 @@ h2, h3{
     width: 100%;
 }
 
+.smalltext{
+    font-size: 12px;
+}
+
 .sub{
     text-align: center;
 }
 
 .sub.sub-h2{ font-size: 28px;}
 
+.ta-center{text-align: center;}
+.ta-left{text-align: left;}
+
 .text-dark{
     color: #3A308C !important;
+}
+
+.text-light h1, .text-light h2, .text-light h3, .text-light h4, .text-light h5, .text-light h6{
+    color: #eeeeee;
 }
 
 @media screen and (max-width: 840px){

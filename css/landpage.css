@@ -16,6 +16,11 @@ body{
     margin-top: 64px;
 }
 
+#map{
+    min-height: 450px;
+    width: 100%;
+}
+
 .navbar-dark .navbar-nav .nav-item *{
     color: rgba(255, 255, 255, 0.8);
 
@@ -31,12 +36,22 @@ body{
     padding: 64px 24px;
 }
 
+
+
 #sectionServicos{
     background-color: #F6F6F6;
     background-image: url("../images/ep-bg-gray.svg");
     background-position: center;
     background-repeat: no-repeat;
     padding: 64px;
+}
+
+#sectionSobre{
+    background-color: #333159;
+    background-image: url("../images/ep-logo-dark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 32px 0px 64px 0px;
 }
 
 .slider{
