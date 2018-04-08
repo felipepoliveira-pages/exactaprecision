@@ -82,6 +82,10 @@
     flex: 1;
 }
 
+.flex-d-col{
+    flex-direction: column;
+}
+
 .flex-wrap{flex-wrap: wrap}
 
 .flex-container > * + *{ margin-left: 32px; }
@@ -123,6 +127,7 @@ h2, h3{
 }
 
 .iconfied-text-icon{
+    display: inline !important;
     height: 19px;
 }
 

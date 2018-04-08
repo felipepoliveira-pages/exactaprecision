@@ -9,4 +9,13 @@ window.addEventListener('load', () => {
         slidesToShow: 1,
         centerMode: true,
       });       
+
+      $('.slider.slider-full').slick({
+        autoplay: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        adaptiveHeight: true,
+      });  
 });

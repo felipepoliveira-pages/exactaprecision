@@ -22,6 +22,9 @@ body{
 }
 
 .modal-banner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     overflow: hidden;
 }
 
@@ -32,7 +35,7 @@ body{
 .modal-disposer{
     display: block;
     margin-left: auto;
-    margin-right: 8px;
+    margin-right: 32px;
     font-size: 24px;
     text-align: right;
     font-family: 'Segoe UI Light';
@@ -102,6 +105,10 @@ body{
 
 #sectionFornecedores{
     margin: 64px 0px;
+}
+
+.servico-desc{
+    flex: 1;
 }
 
 .slider{
