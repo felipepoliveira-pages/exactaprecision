@@ -63,6 +63,10 @@ body{
     margin: auto;
 }
 
+.modal-fullscreen .slick-arrow{
+    background-color: transparent;
+}
+
 .navbar-dark .navbar-nav .nav-item *{
     color: rgba(255, 255, 255, 0.8);
 

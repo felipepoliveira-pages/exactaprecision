@@ -187,6 +187,19 @@ h2, h3{
     width: 100%;
 }
 
+.slider.slider-full{
+    margin: 0px;
+}
+
+.slider.slider-full .slick-list{
+    padding: 0px !important;
+    margin: 0px;
+}
+
+.slider.slider-full .slider-item img{
+    max-width: 80%;
+}
+
 .smalltext{
     font-size: 12px;
 }
