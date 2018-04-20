@@ -45,6 +45,11 @@ body{
     animation: fx-pop-in .4s;
 }
 
+.modal-servico .container{
+    height: 100vh;
+    overflow-y: auto;
+}
+
 .modal-servico .container > *{
     margin-top: 16px;
 }
@@ -105,11 +110,6 @@ body{
 
 #sectionFornecedores{
     margin: 64px 0px;
-}
-
-.servico-desc{
-    flex: 1;
-    overflow-y: auto;
 }
 
 .slider{
